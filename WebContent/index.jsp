@@ -27,7 +27,7 @@ return i;
 		<meta name="description" content="" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>
-			UNIVERSAL NATIONAL BANK
+			BANKIGIRI
 		</title>
 		<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
@@ -39,14 +39,14 @@ return i;
 			<div id="header">
 				<div id="logo">
 					<h1>
-				UNIVERSAL NATIONAL BANK			
+				BANKIGIRI - A Connected Banking For All
 					</h1>
 				
 				</div>
 				
 				<br>
 			
-				<marquee behavior="alternate"><b><i>We Bring Banking at your Finger Tips</i></b></marquee>
+				<marquee ><b><i>Bankigiri brings Banking at your Finger Tips by serving our customers on 3S policy - Simple, Smart and Secure.  Join us Today to have better experience of Banking.</i></b></marquee>
 				 <div id="txt" align="right"></div>
 				<div id="nav">
 					<ul>
@@ -121,7 +121,7 @@ return i;
 				
 					<div class="box">
 						<font color="#990000">
-							<h1>WELCOME TO UNIVERSAL NATIONAL BANK</h1>
+							<h1>Welcome to New Banking World</h1>
 						
 						</font>
 						<img src="images/pic01.jpg" width="150" height="150" alt="" class="left" />
@@ -165,7 +165,7 @@ return i;
 			</div>
 		</div>
 		<div id="copyright">
-			&copy; universalnationalbank. Designed by Sukhmander deep singh.
+			&copy; Bankigiri. Designed by Pareekshit (2015CSA1127).
 		</div>
 	</body>
 </html>

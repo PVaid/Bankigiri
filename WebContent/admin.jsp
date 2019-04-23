@@ -2,21 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>UNIVERSAL NATIONAL BANK</title>
+<title>BANKIGIRI</title>
 <link href="col_font.css" rel="stylesheet" type="text/css" />
-<script >
-function call()
-{
-if(document.f.name.value==""){
-alert("Please Enter Name");
-document.f.name.setFocus=true;
-return false;
-}
-if(document.f.pwd.value==""){
-alert("Please Enter Ur Password");
-return false;
-}
-}
+
 </script>
 <style type="text/css">
 <!--
@@ -43,10 +31,12 @@ return false;
   <tr>
     <td width="11%" height="100" bgcolor="white">&nbsp;&nbsp;<img src="hawaii_national_bank_website_3.jpg" alt="img_3" width="36" height="51" hspace="30" vspace="30" /></td>
 	
-    <td width="50%" height="100" bordercolor="#D6D3CE" bgcolor="white"><p><span class="style1">UNIVERSAL<br/>
-        NATIONAL<br/>
-        BANK</span><strong> <br/>
-    &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WELCOME ADMIN.</span></p>   
+    <td width="50%" height="100" bordercolor="#D6D3CE" bgcolor="white"><p><span class="style1">BANKIGIRI<br/>
+       </br>
+        Simple<br/>
+        Smart<br/>
+        Secure</span><strong> <br/>
+    &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>   
      </td>
     <td width="39%" height="100">
     
@@ -67,22 +57,22 @@ return false;
       <tr bgcolor="#262626">
         <td height="51" class="col_font"><strong></strong></td>
         
-        <td class="col_font"><strong>CUSTOMER LOGIN</strong></td>
+        <td class="col_font"><strong><a href="login.jsp"style="text-decoration : none"><input type="button" value="CUSTOMER LOGIN"/></a></strong></td>
         <td class="col_font"><strong><a href="admin.jsp"style="text-decoration : none"><input type="button" value="ADMIN LOGIN"/></a></strong></td>
-        <td class="col_font"><strong>EMPLOYEE LOGIN</strong></td>
-        <td class="col_font">LOANS</strong></td>
-        <td class="col_font">INTERNET BANKING</strong></td>
-        <td class="col_font"><strong>ABOUT US</strong></td>
+         <td class="col_font"><strong><a href="blogin.jsp"style="text-decoration : none"><input type="button" value="BANK LOGIN"/></a></strong></td>
+          <td class="col_font"><strong><a href="loanfacilities.html"style="text-decoration : none"><input type="button" value="LOAN"/></a></strong></td>
+         <td class="col_font"><strong><a href="internet banking.html"style="text-decoration : none"><input type="button" value="NET BANKING"/></a></strong></td>
+      	<td class="col_font"><strong><a href="aboutus.html"style="text-decoration : none"><input type="button" value="ABOUT US"/></a></strong></td>
       </tr>
     </table>
   
-  	
+  	 
 
 
 <center>
 <BR>
  
- <font size="+2" color="#262626"><h2><b>WELCOME TO UNIVERSAL BANKING SERVICES</b></h2></font>
+ <!-- <font size="+2" color="#262626"><h2><b>WELCOME TO UNIVERSAL BANKING SERVICES</b></h2></font> -->
 <br>
  
 
@@ -93,11 +83,11 @@ return false;
  <tr>
  <font color="#262626"><h1>ADMIN LOGIN</h1>
  </font>
- <td><b>Name:</b></td><td><input type="text" name="name" ></td>
+ <td><b>Name:</b></td><td><input type="text" name="name" required></td>
 </tr>
 <tr><td>&nbsp;</td></tr>
 <tr> 
-<td><b> Password:</b></td><td><input type="password" name="pwd"></td>
+<td><b> Password:</b></td><td><input type="password" name="pwd" required></td>
 </tr>
 </table>
 <br> <BR>

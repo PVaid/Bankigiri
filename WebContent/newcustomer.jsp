@@ -33,7 +33,7 @@ function check(){
 <center>
 <BR><BR>
  
- <font size="+2" color="#FF5C0F"><h2>WELCOME TO UNIVERSAL BANKING SYSTEM</b></h2></font>
+ <font size="+2" color="#FF5C0F"><h2>Welocme TO Simple Secure and Smart Banking Network</b></h2></font>
 <br>
  
 

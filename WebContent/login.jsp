@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
+<!--  
 <script >
 function call()
 {
@@ -10,14 +12,15 @@ document.f.cid.setFocus=true;
 return false;
 }
 if(document.f.pwd.value==""){
-alert("Please Enter Ur Password");
+alert("Please Enter Your Password");
 return false;
 }
 }
 </script>
+-->
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
+<title>Customer Login</title>
 <link href="col_font.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
@@ -44,15 +47,17 @@ return false;
   <tr>
     <td width="11%" height="100" bgcolor="white">&nbsp;&nbsp;<img src="hawaii_national_bank_website_3.jpg" alt="img_3" width="36" height="51" hspace="30" vspace="30" /></td>
 	
-    <td width="50%"  bordercolor="#D6D3CE" bgcolor="white"><p><span class="style1">UNIVERSAL<br/>
-        NATIONAL<br/>
-        BANK</span><strong> <br/>
+    <td width="50%"  bordercolor="#D6D3CE" bgcolor="white"><p><span class="style1">BANKIGIRI<br/>
+      </br>
+        Simple<br/>
+        Smart<br/>
+        Secure</span><strong> <br/>
     &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>BE PART OF ONLINE BANKING</b>.</span></p>   
      </td>
     <td width="39%" height="100">
     
       <table width="100%" height="150px" border="0" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" bgcolor="black">
-       <td><image src="bankint.jpg" width="100%" height="150px"/>
+     <td><image src="bankint.jpg" width="100%" height="150px"/>  
         
       </td>
       
@@ -65,17 +70,17 @@ return false;
       <tr bgcolor="#262626">
         <td height="51" class="col_font"><strong></strong></td>
         
-        <td class="col_font"><strong><a href="login.jsp"><input type="button" value="CUSTOMER LOGIN"/></a></strong></td>
-        <td class="col_font"><strong>EMPLOYEE LOGIN</strong></td>
-        <td class="col_font"><strong>BANK ADMIN</strong></td>
-        <td class="col_font">LOANS</strong></td>
-        <td class="col_font">INTERNET BANKING</strong></td>
-        <td class="col_font"><strong>ABOUT US</strong></td>
+         <td class="col_font"><strong><a href="login.jsp"style="text-decoration : none"><input type="button" value="CUSTOMER LOGIN"/></a></strong></td>
+        <td class="col_font"><strong><a href="admin.jsp"style="text-decoration : none"><input type="button" value="ADMIN LOGIN"/></a></strong></td>
+         <td class="col_font"><strong><a href="blogin.jsp"style="text-decoration : none"><input type="button" value="BANK LOGIN"/></a></strong></td>
+          <td class="col_font"><strong><a href="loanfacilities.html"style="text-decoration : none"><input type="button" value="LOAN"/></a></strong></td>
+         <td class="col_font"><strong><a href="internet banking.html"style="text-decoration : none"><input type="button" value="NET BANKING"/></a></strong></td>
+      	<td class="col_font"><strong><a href="aboutus.html"style="text-decoration : none"><input type="button" value="ABOUT US"/></a></strong></td>
       </tr>
     </table>
     
 <center><BR><BR>
-<font size="+2" color="#262626"><h2><b>WELCOME TO UNIVERSAL BANKING SERVICES</b></h2></font>
+<font size="+2" color="#262626"><h2><b>Be Part of Simple, Secure and Smart Services </b></h2></font>
 <br>
  
 
@@ -84,12 +89,12 @@ return false;
 <form  method=post action="logincheck.jsp" name="f" onSubmit='return call()'>
  <table>
  <tr>
- <img src="custlogin.jpg" width="510" height="89" />
- <td><b>Customer ID:</b></td><td><input type="text" name="cid" ></td>
+ <!-- <img src="custlogin.jpg" width="510" height="89" /> -->
+ <td><b>Customer ID:</b></td><td><input type="text" name="cid"  required></td>
 </tr>
 <tr><td>&nbsp;</td></tr>
 <tr> 
-<td><b> Password:</b></td><td><input type="password" name="pwd"></td>
+<td><b> Password:</b></td><td><input type="password" name="pwd" required></td>
 </tr>
 </table>
 <br> <BR>

@@ -74,12 +74,12 @@ return false;
       <tr bgcolor="#262626">
         <td height="51" class="col_font"><strong></strong></td>
         
-        <td class="col_font"><strong>CUSTOMER LOGIN</strong></td>
-        <td class="col_font"><strong>ADMIN LOGIN</strong></td>
-        <td class="col_font"><strong><a href="blogin.jsp"><input type="button" value="EMPLOYEE LOGIN"/></a></strong></td>
-        <td class="col_font"><strong>LOANS</strong></td>
-        <td class="col_font"><strong>INTERNET BANKING</strong></td>
-        <td class="col_font"><strong>ABOUT US</strong></td>
+       <td class="col_font"><strong><a href="login.jsp"style="text-decoration : none"><input type="button" value="CUSTOMER LOGIN"/></a></strong></td>
+        <td class="col_font"><strong><a href="admin.jsp"style="text-decoration : none"><input type="button" value="ADMIN LOGIN"/></a></strong></td>
+         <td class="col_font"><strong><a href="blogin.jsp"style="text-decoration : none"><input type="button" value="BANK LOGIN"/></a></strong></td>
+          <td class="col_font"><strong><a href="loanfacilities.html"style="text-decoration : none"><input type="button" value="LOAN"/></a></strong></td>
+         <td class="col_font"><strong><a href="internet banking.html"style="text-decoration : none"><input type="button" value="NET BANKING"/></a></strong></td>
+      	<td class="col_font"><strong><a href="aboutus.html"style="text-decoration : none"><input type="button" value="ABOUT US"/></a></strong></td>
       </tr>
     </table>
   <center>

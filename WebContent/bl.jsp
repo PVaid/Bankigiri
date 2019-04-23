@@ -25,7 +25,7 @@ return false;
 }
 </script>
 <head>
-<title>UNIVERSAL NATIONAL BANK</title>
+<title>BANKIGIRI</title>
 <link href="col_font.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
