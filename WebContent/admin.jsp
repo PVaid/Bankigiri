@@ -2,6 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <title>BANKIGIRI</title>
 <link href="col_font.css" rel="stylesheet" type="text/css" />
 
@@ -71,17 +75,33 @@
 
 <center>
 <BR>
- 
- <!-- <font size="+2" color="#262626"><h2><b>WELCOME TO UNIVERSAL BANKING SERVICES</b></h2></font> -->
 <br>
  
+ 
+ <!-- TEXT BOX STYLING -->
 
-
-
-<form  method=post action="admincheck.jsp" name="f" onSubmit='return call()'>
+<form class="w3-container" method=post action="admincheck.jsp" name="f" onSubmit='return call()'>
  <table>
  <tr>
- <font color="#262626"><h1>ADMIN LOGIN</h1>
+ <font color="#262626"><h1><b>ADMIN LOGIN</b></h1>
+  <p>
+  <input class="w3-input" type="text" name="name" placeholder="Admin Id" required style="width:270px" "required></p>
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+  <p>
+  <input class="w3-input" type="password" name="pwd" placeholder="Password" required style="width:270px" required></p></tr>
+  <p>
+</tr>
+</table>
+
+<!-- Text Box Styling Ends--> 
+
+
+<!-- <form  method=post action="admincheck.jsp" name="f" onSubmit='return call()'>
+ <table>
+ <tr>
+ <font color="#262626"><h1><b>ADMIN LOGIN</b></h1>
  </font>
  <td><b>Name:</b></td><td><input type="text" name="name" required></td>
 </tr>
@@ -90,10 +110,54 @@
 <td><b> Password:</b></td><td><input type="password" name="pwd" required></td>
 </tr>
 </table>
-<br> <BR>
- <input type="submit" value="submit">&nbsp;&nbsp;&nbsp;
- <input type="reset" value="reset">&nbsp;&nbsp;&nbsp;
+<br> <BR> -->
+
+
+ <input type="submit" value="Login">&nbsp;&nbsp;&nbsp;
+ <input type="reset" value="Reset">&nbsp;&nbsp;&nbsp;
  <input type="button" name=back  value="Home" onClick="window.location='index.jsp'">
+ 
+
+
+ 
+ <!-- STYLING OF BUTTONS -->
+
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+
+
+background: sky-blue;
+
+color: black;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+text-shadow:none;
+
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+
+background: #016ABC;
+
+color: #fff;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+text-shadow:none;
+
+}
+</style>
+
+<!-- END STYLING OF BUTTONS -->
  
  </form>
 <br>

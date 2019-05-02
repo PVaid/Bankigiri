@@ -2,28 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<!--  
-<script >
-function call()
-{
-if(document.f.cid.value==""){
-alert("Please Enter Customer Id");
-document.f.cid.setFocus=true;
-return false;
-}
-if(document.f.pwd.value==""){
-alert("Please Enter Your Password");
-return false;
-}
-}
-</script>
--->
 
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
 <title>Customer Login</title>
 <link href="col_font.css" rel="stylesheet" type="text/css" />
+ 
 <style type="text/css">
-<!--
+
 .style1 {
 	color: #990000;
 	font-weight: bold;
@@ -37,8 +26,9 @@ return false;
 }
 .style8 {font-size: 12px}
 .style9 {font-weight: bold}
--->
+
 </style>
+
 <link href="img.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -52,12 +42,12 @@ return false;
         Simple<br/>
         Smart<br/>
         Secure</span><strong> <br/>
-    &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>BE PART OF ONLINE BANKING</b>.</span></p>   
+    &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</span></p>   
      </td>
     <td width="39%" height="100">
     
       <table width="100%" height="150px" border="0" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" bgcolor="black">
-     <td><image src="bankint.jpg" width="100%" height="150px"/>  
+     <image src="bankint.jpg" width="100%" height="150px"/>  <td> 
         
       </td>
       
@@ -83,26 +73,78 @@ return false;
 <font size="+2" color="#262626"><h2><b>Be Part of Simple, Secure and Smart Services </b></h2></font>
 <br>
  
+<!-- TEXT BOX STYLING -->
+
+<form class="w3-container" method=post action="logincheck.jsp" name="f" onSubmit='return call()'>
 
 
-
-<form  method=post action="logincheck.jsp" name="f" onSubmit='return call()'>
  <table>
  <tr>
- <!-- <img src="custlogin.jpg" width="510" height="89" /> -->
- <td><b>Customer ID:</b></td><td><input type="text" name="cid"  required></td>
-</tr>
-<tr><td>&nbsp;</td></tr>
-<tr> 
-<td><b> Password:</b></td><td><input type="password" name="pwd" required></td>
+ 
+  <p>
+ 
+  <input class="w3-input" type="text" name="cid" placeholder="Customer Id" style="width:270px" "required></p>
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+  <p>
+  
+  <input class="w3-input" type="password" name="pwd" placeholder="Password" style="width:270px" required></p></tr>
+  <p>
 </tr>
 </table>
+
+<!-- Text Box Styling Ends EEEEEEEE-->
+
+
+
+
+
 <br> <BR>
 
- <input type="submit" value="submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <input type="reset" value="reset">&nbsp;&nbsp;&nbsp;&nbsp;
+ <input type="submit" value="Login"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input type="reset" value="Reset">&nbsp;&nbsp;&nbsp;&nbsp;
  <input type="button" name=back  value="Home" onClick="window.location='index.jsp'">
  <center><h2><b><a href="newcustomer.jsp"style="text-decoration : none"><font color="BLACK"><BR>New User..?<image src="signup.gif"/image></font> 
+
+<!-- STYLING OF BUTTONS -->
+
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+
+
+background: sky-blue;
+
+color: black;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+text-shadow:none;
+
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+
+background: #016ABC;
+
+color: #fff;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+text-shadow:none;
+
+}
+</style>
+
+<!-- END STYLING OF BUTTONS -->
 
 </a></b></h2></center>
  </form>

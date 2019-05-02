@@ -30,7 +30,7 @@ return false;
 <center>
 <BR><BR>
  
- <font size="+2" color="#FF5C0F"><h2>Welcome To Universal Natinal Bank</b></h2></font>
+ <font size="+2" color="#FF5C0F"><h2>Welcome To Bankigiri</b></h2></font>
 <br>
  
 

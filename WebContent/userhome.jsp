@@ -29,9 +29,11 @@
   <tr>
     <td width="11%" height="100" bgcolor="white">&nbsp;&nbsp;<img src="hawaii_national_bank_website_3.jpg" alt="img_3" width="36" height="51" hspace="30" vspace="30" /></td>
 	
-    <td width="4500%"  bordercolor="#D6D3CE" bgcolor="white"><p><span class="style1">UNIVERSAL<br/>
-        NATIONAL<br/>
-        BANK</span><strong> <br/>
+    <td width="4500%"  bordercolor="#D6D3CE" bgcolor="white"><p><span class="style1">BANKIGIRI - A CONNECTED BANKING FOR ALL<br/>
+    <br/>
+        SIMPLE<br/>
+        SMART<br/>
+        SECURE</span><strong> <br/>
     &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<marquee behavior="alternate"><h2><b>WELCOME TO USER AREA.</b></h2></marquee></span></p> 
      </td>
     <td width="39%" height="100">
@@ -57,7 +59,7 @@
         <td class="col_font"><strong><a href="viewacinfo.jsp"><input type="button" value="View Accounts Information"/></a></strong></td>
         <td class="col_font"><strong><a href="traamt.jsp"><input type="button" value="Transfer Amount"/></a></strong></td>
         <td class="col_font"><strong><a href="treport.jsp"><input type="button" value="Transaction Report"/></a></strong></td>
-        <td class="col_font"><strong><a href="login.jsp"><input type="button" value="SignOut"/></a></strong></td>
+        <td class="col_font"><strong><a href="Newlogin.jsp"><input type="button" value="SignOut"/></a></strong></td>
         
       </tr>
     </table></td>

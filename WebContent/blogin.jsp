@@ -4,26 +4,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<script >
-function call()
-{
-if(document.f.bid.value==""){
-alert("Please Enter Ur Name");
-return false;
-}
-if(document.f.pwd.value==""){
-alert("Please Enter Ur Password");
-return false;
-}
-if((document.f.bid.value=="")||(document.f.pwd.value==""))
-	{
-alert("Please Enter Username& password");
-return false;
-}
-}
-</script>
 
-<title>UNIVERSAL NATIONAL BANK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<title>BANKIGIRI</title>
 <link href="col_font.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
@@ -50,10 +35,12 @@ return false;
   <tr>
     <td width="11%" height="100" bgcolor="white">&nbsp;&nbsp;<img src="hawaii_national_bank_website_3.jpg" alt="img_3" width="36" height="51" hspace="30" vspace="30" /></td>
 	
-    <td width="50%"  bordercolor="#D6D3CE" bgcolor="pink"><p><span class="style1">UNIVERSAL<br/>
-        NATIONAL<br/>
-        BANK</span><strong> <br/>
-    &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>EMPLOYEE LOGIN AREA.</b></span></p>   
+    <td width="50%"  bordercolor="#D6D3CE" bgcolor="white"><p><span class="style1">BANKIGIRI<br/>
+   </br>
+        Simple<br/>
+        Smart<br/>
+        Secure</span><strong> <br/>
+    &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b></span></p>   
      </td>
     <td width="39%" height="100">
     
@@ -84,7 +71,7 @@ return false;
     </table>
   <center>
 <BR>
-<font size="+2" color="#262626"><h2><b>WELCOME TO UNIVERSAL BANKING SERVICES</b></h2></font>
+
  
  
 <br>
@@ -92,19 +79,26 @@ return false;
  
 
 <br>
+
+
+
+ 
 <form  method=post action="bloginch.jsp" name="f" onSubmit='return call()'>
  <table width="40%" cellpadding="5" cellspacing="5">
  <colgroup span=2 >
  <tr>
  
- <font color="#262626"><h1>EMPLOYEE LOGIN</h1>
- </font>
- <td><b>Username:</b></td><td><input type="text" name="bid" ></td>
+ 
+ 
+<td></td><td><input type="text" name="bid" placeholder="UserId" required></td>
 </tr>
  
 <tr> 
-<td><b> Password:</b></td><td><input type="password" name="pwd"></td>
-</tr><tr> 
+<td></td><td><input type="password" name="pwd" placeholder="Password" required></td>
+</tr>
+<tr> 
+
+
 <td><b> Select Bank:</b></td><td><SELECT NAME="bl">
 <%
 try
@@ -133,10 +127,49 @@ catch(Exception e)
 </table>
 <br> <BR>
  <input type="submit" value="   Login   "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <input type="reset" value="   reset   ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name=back  
+ <input type="reset" value="   Reset   ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name=back  
 
 value="Home" onClick="window.location='index.jsp'"><BR>
- <center><h2><b><a href="newbankuser.jsp" style="text-decoration : none"><font size="5" font color="#262626"><BR>New EMPLOYEE..?<image src="signup.gif"/image></font> 
+ <center><h2><b><a href="newbankuser.jsp" style="text-decoration : none"><font size="5" font color="#262626"><BR>New EMPLOYEE..?<image src="signup.gif"/image></font>
+ 
+ <!-- STYLING OF BUTTONS -->
+
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+
+
+background: sky-blue;
+
+color: black;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+text-shadow:none;
+
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+
+background: #016ABC;
+
+color: #fff;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+text-shadow:none;
+
+}
+</style>
+
+<!-- END STYLING OF BUTTONS --> 
 
 </a></b></h2></center>    
  </form>

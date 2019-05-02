@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>ADMIN HOME</title>
+<title>Interface Admin</title>
 <link href="col_font.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
@@ -29,10 +29,12 @@
   <tr>
     <td width="11%" height="100" bgcolor="white">&nbsp;&nbsp;<img src="hawaii_national_bank_website_3.jpg" alt="img_3" width="36" height="51" hspace="30" vspace="30" /></td>
 	
-    <td width="4500%"  bordercolor="#D6D3CE" bgcolor="white"><p><span class="style1">UNIVERSAL<br/>
-        NATIONAL<br/>
-        BANK</span><strong> <br/>
-    &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<marquee behavior="alternate"> <b>WELCOME TO ADMINE MODULE.</b></marquee></span></p>   
+    <td width="4500%"  bordercolor="#D6D3CE" bgcolor="white"><p><span class="style1">BANKIGIRI<br/>
+        </br>
+        Simple<br/>
+        Smart<br/>
+        Secure</span><strong> <br/>
+    &nbsp; </strong><span class="style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<marquee behavior="alternate"> <b>WELCOME TO ADMIN MODULE.</b></marquee></span></p>   
      </td>
     <td width="39%" height="100">
     

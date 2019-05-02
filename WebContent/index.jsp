@@ -51,13 +51,13 @@ return i;
 				<div id="nav">
 					<ul>
 						<li class="first">
-							<a href="login.jsp">CUSTOMER LOGIN</a>
+							<a href="Newlogin.jsp">CUSTOMER LOGIN</a>
 						</li>
 						<li>
-							<a href="blogin.jsp">EMPLOYEE LOGIN</a>
+							<a href="newBank_login.jsp">BANK LOGIN</a>
 						</li>
 						<li>
-							<a href="admin.jsp">ADMIN LOGIN</a>
+							<a href="newAdmin_login.jsp">ADMIN LOGIN</a>
 						</li>
 						<li>
 							<a href="loanfacilities.html">LOANS</a>
