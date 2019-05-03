@@ -1,2 +1,5 @@
-<center><h3>Your request is in process</h3> 
-<jsp:include page="login.jsp"/>
+
+<script>
+alert("Your Request is in Process")
+</script>
+<jsp:include page="Newlogin.jsp"/>

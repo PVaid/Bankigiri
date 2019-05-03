@@ -75,7 +75,7 @@ String bn=(String)session.getAttribute("bname");
         <td class="col_font"><strong><a href="transpen.jsp?bname=<%=bn%>" style="text-decoration:none"><input type="button" value="Transfer Pending"/></a></strong></td>
         <td class="col_font"><strong><a href="transdec.jsp?bname=<%=bn%>" style="text-decoration:none"><input type="button" value="Transfer Decline"/></a></strong></td>
         <td class="col_font"><strong><a href="newaccpen.jsp?bname=<%=bn%>" style="text-decoration:none"><input type="button" value="New Pending A/c"/></a></strong></td>
-        <td class="col_font"><strong><a href="lout.jsp" style="text-decoration:none"><input type="button" value="SignOut"/></a></strong></td>
+        <td class="col_font"><strong><a href="newBank_login.jsp" style="text-decoration:none"><input type="button" value="SignOut"/></a></strong></td>
       </tr>
     </table></td>
   </tr>

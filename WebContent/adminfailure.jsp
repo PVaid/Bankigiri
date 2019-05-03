@@ -1,6 +1,6 @@
 <BR>
 <center><h2>Invalid user name and password</h3> 
-<jsp:include page="admin.jsp"/>
+<jsp:include page="newAdmin_login.jsp"/>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 <HEAD>

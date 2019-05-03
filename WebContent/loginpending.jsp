@@ -9,8 +9,8 @@
 </HEAD>
 
 <BODY><BR>
-<jsp:include page="blogin.jsp"/><BR><BR>
-<center><h3><li>Your request is under process Please wait</h3>
+<jsp:include page="newBank_login.jsp"/><BR><BR>
+<h3><li>Your request is under process Please wait</h3>
  
 </BODY>
 </HTML>

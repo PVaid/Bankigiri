@@ -30,6 +30,60 @@ input[type=text], select, [type=password] {
   box-sizing: border-box;
 }
 
+ 
+input[type=button], input[type=submit], input[type=reset] {
+
+height: 50px;
+
+background:  #80aaff;
+
+color: black;
+
+border: 5px solid #eee;
+
+border-radius: 80px;
+
+box-shadow: 5px 5px 5px #eee;
+
+text-shadow:none;
+
+font-weight:bold;
+ font-size: 22px;
+    font-weight: 600;
+    font-family: "Nunito Sans";
+    cursor: pointer;
+
+
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+
+height: 50px;
+
+background:  #80aaff;
+
+color: black;
+
+border: 5px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+text-shadow:none;
+
+font-weight:bold;
+
+ font-size: 22px;
+    font-weight: 600;
+    font-family: "Nunito Sans";
+    cursor: pointer;
+
+
+}
+
+
+
 </style>
 </HEAD>
 
@@ -61,7 +115,7 @@ input[type=text], select, [type=password] {
 	}
 </script>
 
-<BODY background="backgroun.png">
+<BODY background="header-background.png">
 	<BR>
 
 	<form  action="insotheraccount.jsp" name="f1" method=get
@@ -160,10 +214,10 @@ input[type=text], select, [type=password] {
 			<tr></tr>
 
 		</table>
-		<BR> <BR> <input type=submit value=Submit>&nbsp;&nbsp;&nbsp;&nbsp;<input
-			type="button" name=back value="   back   "
+		 <input type=submit value="submit" >&nbsp;&nbsp;&nbsp;&nbsp;<input
+			type="button" name=back value="   Back   "
 			onClick="window.location='user.jsp'">&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="reset" value="   reset   "> </font></b>
+		<input type="reset" value="   Reset   "> </font></b>
 	</form>
 </body>
 </center>

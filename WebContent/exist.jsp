@@ -1,4 +1,2 @@
-<BR>
-<h3><center>Customer id already exist please enter new customer id</h3>
-<BR>
-<jsp:include page="newcustomer.jsp"/>
+<script>alert("Customer Id Already Exists. Please Enter New Id.")</script>
+<jsp:include page="New_Customer_Login.jsp"/>
