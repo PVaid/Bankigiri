@@ -17,7 +17,7 @@ Connection con = DB.getCon();
       String cid=request.getParameter("cid");
 	     String bname=request.getParameter("bname");
 		       String atype=request.getParameter("atype");
-			   float bal=50000;int status=0;
+			   float bal=1000;int status=0;
    PreparedStatement st=con.prepareStatement("insert into customer values(?,?,?,?,?,?,?,?,?,?)");
      st.setString(1,uid);
 	 st.setString(2,cid);    
@@ -37,9 +37,10 @@ Connection con = DB.getCon();
 	   %>
 	    <script>
 	       alert("Account No already Exit..");
-	    </script>
+	    </script>00
 	 
 	   <%
+	   
 	   response.sendRedirect("otherbanknewac.jsp");
    }
   %>

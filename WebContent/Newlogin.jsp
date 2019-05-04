@@ -1,178 +1,374 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Arvo"rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+
+
+<script type="text/javascript">
+	function startTime() {
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = today.getSeconds();
+		// add a zero in front of numbers<10
+		m = checkTime(m);
+		s = checkTime(s);
+		document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+		t = setTimeout('startTime()', 500);
+	}
+	function checkTime(i) {
+		if (i < 10) {
+			i = "0" + i;
+		}
+		return i;
+	}
+</script>
+
 <style>
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 
-@import url('https://fonts.googleapis.com/css?family=Numans');
-
-html,body{
-background: url("banner.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
+.vldform {
+	box-sizing: border-box;
+	width: 375px;
+	display: flex;
+	flex-direction: column;
+	padding: 35px 55px;
+	font-family: "Nunito Sans";
+	animation: a .5s;
+	animation-fill-mode: forwards;
+	border: #d4d4d4 1px solid;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+	
 }
 
-.container{
-height: 100%;
-align-content: center;
+.vldform a {
+	text-decoration: none;
 }
 
-.card{
-height: 370px;
-margin-top: auto;
-margin-bottom: auto;
-width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
+.vldform h1 {
+	font-size: 40px;
+	color: #0A7F99;
+	margin: 0px 0px 26px 0px;
 }
 
-.social_icon span{
-font-size: 60px;
-margin-left: 10px;
-color:  #f2f2f2;
+.vldform__textbox {
+	border: 0;
+	outline: 0;
+	border-bottom: 2px #0A7F99 solid;
+	font-size: 18px;
+	margin-top: 36px;
+	padding-bottom: 9px;
+	font-family: "Nunito Sans";
 }
 
-.social_icon span:hover{
-color: white;
-cursor: pointer;
+.vldform__textbox[type="password"]::after {
+	content: " ";
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #0A7F99;
 }
 
-.card-header h3{
-color: white;
+.vldform__recoverypassword {
+	align-self: flex-end;
+	margin: 10px 0px;
+	font-size: 16px;
+	color: #2E67A9;
 }
 
-.social_icon{
-position: absolute;
-right: 20px;
-top: -45px;
+.vldform__button {
+	margin-top: 42px;
+	height: 50px;
+	border: 0;
+	color: #fff;
+	border-radius: 10px;
+	background-image: linear-gradient(#0A7F99, #0A7F99);
+	font-size: 22px;
+	font-weight: 600;
+	font-family: "Nunito Sans";
+	cursor: pointer;
 }
 
-.input-group-prepend span{
-width: 50px;
-background-color: #0086b3;
-color: black;
-border:0 !important;
+.vldform__signup {
+	align-self: center;
+	margin-top: 50px;
+	margin-bottom: 0px;
 }
 
-input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
+.vldform__signup a {
+	color: #6538B5;
+	font-weight: 600;
+	margin-left: 4px;
 }
 
-.remember{
-color: white;
+.vldreg {
+	display: none;
 }
 
-.remember input
-{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
+.vldrecpass {
+	display: none;
 }
 
-.login_btn{
-
-color: black;
-background-color: #bfbfbf;
-width: 100px;
+@
+keyframes a { 0% {
+	opacity: 0;
+	transform: translateY(-5px)
 }
 
-.login_btn:hover{
-color: black;
-background-color: white;
+to {
+	opacity: 1;
+	transform: translateY(5px)
 }
 
-.links{
-color: white;
+}
+@media ( max-width : 400px) {
+	.vldform {
+		width: 350px;
+		padding: 20px 40px;
+	}
 }
 
-.links a{
-margin-left: 4px;
+@media ( max-width : 360px) {
+	.vldform {
+		width: 305px;
+		padding: 20px 35px;
+	}
+	.vldform__signup {
+		text-align: center;
+	}
+	.vldform__signup a {
+		margin-left: 14px;
+	}
 }
 </style>
 
-
-
-
-	<title>Login Page</title>
-   
-   
-	<!--Bootsrap 4 CDN-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <!--Fontawesome CDN-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="styles.css">
+<title>BANKIGIRI</title>
 </head>
-<body>
-<div class="container">
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h3>Sign In</h3>
-				 
-				<div class="d-flex justify-content-end social_icon">
-					<span><i class="fab fa-facebook-square" onClick="https://www.facebook.com/"></i></span>
-					<span><i class="fab fa-google-plus-square"></i></span>
-					<span><i class="fab fa-twitter-square"></i></span>
-				</div>
-				
+
+<body onload="startTime()">
+
+
+	<div id="bg1"></div>
+	<div id="bg2"></div>
+	<div id="outer">
+	
+	<!-- HEADER STARTS -->
+		<div id="header">
+			<div id="logo">
+				<h1>BANKIGIRI - A CONNECTED BANKING FOR ALL </h1>
 			</div>
-			<div class="card-body">
-				<form method=post action="logincheck.jsp" name="f" onSubmit='return call()'>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						</div>
-						
-						<input type="text" name= "cid" class="form-control" placeholder="customer id" required>
-						
-					</div>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
-						</div>
-						<input type="password" name= "pwd" class="form-control" placeholder="password" required>
-					</div>
-					<div class="row align-items-center remember">
-						<input type="checkbox">Remember Me
-					</div>
-					
-					<div  class="form-group">
-					<table>
-					<tr>
-					<td>
-						<input type="submit" value="Login" class="btn float-right login_btn"> </td>
-					<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-					<td>
-						<input type="Button" value="Home" name=back onClick="window.location='index.jsp'" class="btn float-right login_btn">
-					</td>
-					</tr>
-					</table>
-					</div>
-					
-				</form>
-			</div>
-			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="New_Customer_Login.jsp">Sign Up</a>
-				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">Forgot your password?</a>
-				</div>
+			<br>
+			<marquee>
+				<b><i>Bankigiri brings Banking at your Finger Tips by
+						serving our customers on 3S policy - Simple, Smart and Secure.
+						Join us Today to have better experience of Banking.</i></b>
+			</marquee>
+			<div id="txt" align="right"></div>
+			<div id="nav">
+				<ul>
+					<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
+					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
+					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
+					<li><a href="loanfacilities.html">LOANS</a></li>
+					<li><a href="internet banking.html">INTERNET BANKING</a></li>
+					<li><a href="newcontact.jsp">CONTACT US</a></li>
+				</ul>
+				<br class="clear" />
 			</div>
 		</div>
+
+<!-- HEADER ENDS -->
+<br></br>
+
+<center>
+<form class="vldform vldauth" method="post" action="logincheck.jsp"
+		name="f" onSubmit='return call()' >
+		
+		
+		
+		
+		<h1>User Log in</h1>
+		<input class="vldform__textbox" type="text" placeholder="Customer Id"
+			name="cid" required> <input class="vldform__textbox"
+			type="password" id="" placeholder="Password" name="pwd" required>
+			<a class="vldform__recoverypassword" href="#"
+			onclick="showrecoveryform()">Forgot password?</a> <a
+			class="vldform__recoverypassword" href="#"
+			onclick="window.location='New_Customer_Login.jsp'">Sign Up?</a> <input
+			class="vldform__button" type="submit" value="Log in" width="25%">
+		<input class="vldform__button" type="button" value="Home"
+			onClick="window.location='index.jsp'">
+	</form>
+	 <br></br>
+	
+	
+		</div>
+		<br class="clear" />
 	</div>
-</div>
+	</div>
+	<div id="copyright">&copy; Bankigiri. Designed by Pareekshit
+		(2015CSA1127).</div>
+		
+		</center>
 </body>
+<script>
+	"use strict";
+			"object" != typeof window.CP && (window.CP = {}),
+			window.CP.PenTimer = {
+				programNoLongerBeingMonitored : !1,
+				timeOfFirstCallToShouldStopLoop : 0,
+				_loopExits : {},
+				_loopTimers : {},
+				START_MONITORING_AFTER : 2e3,
+				STOP_ALL_MONITORING_TIMEOUT : 5e3,
+				MAX_TIME_IN_LOOP_WO_EXIT : 2200,
+				exitedLoop : function(o) {
+					this._loopExits[o] = !0
+				},
+				shouldStopLoop : function(o) {
+					if (this.programKilledSoStopMonitoring)
+						return !0;
+					if (this.programNoLongerBeingMonitored)
+						return !1;
+					if (this._loopExits[o])
+						return !1;
+					var t = this._getTime();
+					if (0 === this.timeOfFirstCallToShouldStopLoop)
+						return this.timeOfFirstCallToShouldStopLoop = t, !1;
+					var i = t - this.timeOfFirstCallToShouldStopLoop;
+					if (i < this.START_MONITORING_AFTER)
+						return !1;
+					if (i > this.STOP_ALL_MONITORING_TIMEOUT)
+						return this.programNoLongerBeingMonitored = !0, !1;
+					try {
+						this._checkOnInfiniteLoop(o, t)
+					} catch (e) {
+						return this._sendErrorMessageToEditor(),
+								this.programKilledSoStopMonitoring = !0, !0
+					}
+					return !1
+				},
+				_sendErrorMessageToEditor : function() {
+					try {
+						if (this._shouldPostMessage()) {
+							var o = {
+								action : "infinite-loop",
+								line : this._findAroundLineNumber()
+							};
+							parent.postMessage(o, "*")
+						} else
+							this._throwAnErrorToStopPen()
+					} catch (t) {
+						this._throwAnErrorToStopPen()
+					}
+				},
+				_shouldPostMessage : function() {
+					return document.location.href.match(/boomerang/)
+				},
+				_throwAnErrorToStopPen : function() {
+					throw "We found an infinite loop in your Pen. We've stopped the Pen from running. Please correct it or contact support@codepen.io."
+				},
+				_findAroundLineNumber : function() {
+					var o = new Error, t = 0;
+					if (o.stack) {
+						var i = o.stack.match(/boomerang\S+:(\d+):\d+/);
+						i && (t = i[1])
+					}
+					return t
+				},
+				_checkOnInfiniteLoop : function(o, t) {
+					if (!this._loopTimers[o])
+						return this._loopTimers[o] = t, !1;
+					if (t - this._loopTimers[o] > this.MAX_TIME_IN_LOOP_WO_EXIT)
+						throw "Infinite Loop found on loop: " + o
+				},
+				_getTime : function() {
+					return +new Date
+				}
+			},
+			window.CP.shouldStopExecution = function(o) {
+				var t = window.CP.PenTimer.shouldStopLoop(o);
+				return
+						!0 === t
+								&& console
+										.warn("[CodePen]: An infinite loop (or a loop taking too long) was detected, so we stopped its execution. Sorry!"),
+						t
+			}, window.CP.exitedLoop = function(o) {
+				window.CP.PenTimer.exitedLoop(o)
+			};
+</script>
+<script id="rendered-js">
+	function showregform() {
+		document.title = "Sign up";
+		document.querySelector(".vldauth").style.display = "none";
+		document.querySelector(".vldreg").style.display = "flex";
+	}
+
+	function showauthform() {
+		document.title = "Log in";
+		document.querySelector(".vldauth").style.display = "flex";
+		document.querySelector(".vldreg").style.display = "none";
+		document.querySelector(".vldrecpass").style.display = "none";
+	}
+
+	function showrecoveryform() {
+		document.title = "Password recovery";
+		document.querySelector(".vldauth").style.display = "none";
+		document.querySelector(".vldrecpass").style.display = "flex";
+	}
+	//# sourceURL=pen.js
+</script>
+<script>
+	!function() {
+		function e(e) {
+			t(e), window.PrefixFree && StyleFix.process()
+		}
+		function t(e) {
+			var t = n(), a = document.createElement("style");
+			a.type = "text/css", a.className = "cp-pen-styles",
+					a.styleSheet ? a.styleSheet.cssText = e : a
+							.appendChild(document.createTextNode(e)), c
+							.appendChild(a), t && t.parentNode.removeChild(t)
+		}
+		function n() {
+			for (var e = document.getElementsByTagName("style"), t = e.length - 1; t >= 0; t--)
+				if ("cp-pen-styles" === e[t].className)
+					return e[t];
+			return !1
+		}
+		function a(e) {
+			window.addEventListener ? window.addEventListener("message", e, !1)
+					: window.attachEvent("onmessage", e)
+		}
+		function s(e, t) {
+			try {
+				if (!/codepen/.test(e.origin))
+					return null;
+				if ("object" != typeof e.data)
+					return null;
+				if (e.data.action === t)
+					return e.data
+			} catch (n) {
+			}
+			return null
+		}
+		var c = document.head || document.getElementsByTagName("head")[0], r = "ACTION_LIVE_VIEW_RELOAD_CSS";
+		a(function(t) {
+			var n = s(t, r);
+			n && e(n.data.css)
+		})
+	}();
+</script>
 </html>

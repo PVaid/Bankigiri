@@ -56,6 +56,6 @@ PreparedStatement st3=con.prepareStatement("insert into bank values(?,?)");
 		st.setString(4,bname);
 		st.setInt(5,ind);
 		st.executeUpdate();
- response.sendRedirect("process.jsp");
+ response.sendRedirect("Bank_Signup_Process.jsp");
  
  %>

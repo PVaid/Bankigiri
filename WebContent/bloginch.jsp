@@ -35,7 +35,7 @@ if(rs.next())
 		response.sendRedirect("loginpending.jsp");
 }
 else
-response.sendRedirect("loginffailure.jsp");
+response.sendRedirect("bank_login_failure.jsp");
 
 }catch(Exception e){}
 %>

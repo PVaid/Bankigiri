@@ -1,152 +1,382 @@
 
-
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="UTF-8">
 
-<title>Sign Up Form</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Arvo"rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<script>
-function call()
-{
-	if(!((document.f.pwd.value)==(document.f.pwd1.value)))
-	{
-	 alert("Enter Correct Password");
-	 return false;
-	}	
-}
+
+
+
+<script type="text/javascript">
+	function startTime() {
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = today.getSeconds();
+		// add a zero in front of numbers<10
+		m = checkTime(m);
+		s = checkTime(s);
+		document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+		t = setTimeout('startTime()', 500);
+	}
+	function checkTime(i) {
+		if (i < 10) {
+			i = "0" + i;
+		}
+		return i;
+	}
 </script>
 
 <style>
-      body {
-  font-family: 'Hammersmith One', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #2292A4;
-}
-.container {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 410px; width: 350px;
-  background: #FFF;
-  border-radius: 10px;
-  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
-              0 5px 15px 0 rgba(0,0,0,0.08);
-  text-align: center;
-  padding: 15px 0;
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+
+.vldform {
+	box-sizing: border-box;
+	width: 375px;
+	display: flex;
+	flex-direction: column;
+	padding: 35px 55px;
+	font-family: "Nunito Sans";
+	animation: a .5s;
+	animation-fill-mode: forwards;
+	border: #d4d4d4 1px solid;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+	
 }
 
-.container span {
-  display: inline-block;
-  padding: 10px 0;
-  font-size: 25px;
-}
-.container form {
-  padding: 0 35px;
-}
-.container input[type="text"],
-.container input[type="password"] {
-  font-family: 'Hammersmith One', sans-serif;
-  width: 100%;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  border: none;
-  font-size: 14px;
-  border-bottom: 2px solid #9FB1BC;
-}
-.container input[type="text"]:focus,
-.container input[type="password"]:focus {
-  outline: none;
-  border-color: #3D348B;
-}
-.container form label {
-  display: block;
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 9px;
-  letter-spacing: 2px;
-  color: #9FB1BC;
+.vldform a {
+	text-decoration: none;
 }
 
-.container input[type="submit"] {
-  width: 100%;
-  font-family: 'Hammersmith One', sans-serif;
-  text-transform: uppercase;
-  margin-top: 10px;
-  padding: 10px;
-  border: 2px solid #3D348B;
-  border-radius: 5px;
-  background: #3D348B;
-  color: #FFF;
-  cursor: pointer;
-  transition: opacity .5s;
-}
-.container input[type="button"]:hover {
-  opacity: .8;
-}
-.container form a {
-  display: block;
-  margin-top: 10px;
-  text-align: right;
-  color: #9FB1BC;
-  font-size: 12px;
-}
-.container form a:hover {
-  color: #000;
+.vldform h1 {
+	font-size: 40px;
+	color: #0A7F99;
+	margin: 0px 0px 26px 0px;
 }
 
-/* EXTRA */
-#link {
-  position: absolute;
-  right: 0; left: 0;
-  bottom: 10px;
-  display: block;
-  font-family: 'Concert One', sans-serif;
-  text-align: center;
-  color: #000;
-  opacity: 0.3;
+.vldform__textbox {
+	border: 0;
+	outline: 0;
+	border-bottom: 2px #0A7F99 solid;
+	font-size: 18px;
+	margin-top: 36px;
+	padding-bottom: 9px;
+	font-family: "Nunito Sans";
 }
-#link:hover {
-  opacity: 1; 
-  text-decoration: none;
+
+.vldform__textbox[type="password"]::after {
+	content: " ";
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #0A7F99;
 }
-    </style>
-<script>
-  window.console = window.console || function(t) {};
-</script>
-<script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
+
+.vldform__recoverypassword {
+	align-self: flex-end;
+	margin: 10px 0px;
+	font-size: 16px;
+	color: #2E67A9;
+}
+
+.vldform__button {
+	margin-top: 42px;
+	height: 50px;
+	border: 0;
+	color: #fff;
+	border-radius: 10px;
+	background-image: linear-gradient(#0A7F99, #0A7F99);
+	font-size: 22px;
+	font-weight: 600;
+	font-family: "Nunito Sans";
+	cursor: pointer;
+}
+
+.vldform__signup {
+	align-self: center;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+.vldform__signup a {
+	color: #6538B5;
+	font-weight: 600;
+	margin-left: 4px;
+}
+
+.vldreg {
+	display: none;
+}
+
+.vldrecpass {
+	display: none;
+}
+
+@
+keyframes a { 0% {
+	opacity: 0;
+	transform: translateY(-5px)
+}
+
+to {
+	opacity: 1;
+	transform: translateY(5px)
+}
+
+}
+@media ( max-width : 400px) {
+	.vldform {
+		width: 350px;
+		padding: 20px 40px;
+	}
+}
+
+@media ( max-width : 360px) {
+	.vldform {
+		width: 305px;
+		padding: 20px 35px;
+	}
+	.vldform__signup {
+		text-align: center;
+	}
+	.vldform__signup a {
+		margin-left: 14px;
+	}
+}
+</style>
+
+<title>BANKIGIRI</title>
 </head>
-<body translate="no">
-<div class="container">
-<span>Create Account</span>
-<form method=post action="bankprocess.jsp" name="f" onSubmit='return call()'>
 
-<label for="userid">User ID<input type="text"name="id" required></label>
-
-<label for="Password">Password<input type="password" name="pwd" required></label>
-
-<label for="Confirm">Confirm Password<input type="password" name="pwd1" required></label>
-
-<label for="Bank Name">Enter Bank Name<input type="text"name="bname" required></label>
-
-<input type="submit" value="Sign Up">
-<a href="newBank_login.jsp">I already have an account</a>
-</form>
-</div>
+<body onload="startTime()">
 
 
-<script> !function()
-{
-	function e(e){t(e),window.PrefixFree&&StyleFix.process()}function t(e){var t=n(),a=document.createElement("style");a.type="text/css",a.className="cp-pen-styles",a.styleSheet?a.styleSheet.cssText=e:a.appendChild(document.createTextNode(e)),c.appendChild(a),t&&t.parentNode.removeChild(t)}function n(){for(var e=document.getElementsByTagName("style"),t=e.length-1;t>=0;t--)if("cp-pen-styles"===e[t].className)return e[t];return!1}function a(e){window.addEventListener?window.addEventListener("message",e,!1):window.attachEvent("onmessage",e)}function s(e,t){try{if(!/codepen/.test(e.origin))return null;if("object"!=typeof e.data)return null;if(e.data.action===t)return e.data}catch(n){}return null}var c=document.head||document.getElementsByTagName("head")[0],r="ACTION_LIVE_VIEW_RELOAD_CSS";a(function(t){var n=s(t,r);n&&e(n.data.css)})}();
-	</script>
+	<div id="bg1"></div>
+	<div id="bg2"></div>
+	<div id="outer">
+	
+	<!-- HEADER STARTS -->
+		<div id="header">
+			<div id="logo">
+				<h1>BANKIGIRI - A Connected Banking For All</h1>
+			</div>
+			<br>
+			<marquee>
+				<b><i>Bankigiri brings Banking at your Finger Tips by
+						serving our customers on 3S policy - Simple, Smart and Secure.
+						Join us Today to have better experience of Banking.</i></b>
+			</marquee>
+			<div id="txt" align="right"></div>
+			<div id="nav">
+				<ul>
+					<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
+					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
+					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
+					<li><a href="loanfacilities.html">LOANS</a></li>
+					<li><a href="internet banking.html">INTERNET BANKING</a></li>
+					<li><a href="newcontact.jsp">CONTACT US</a></li>
+				</ul>
+				<br class="clear" />
+			</div>
+		</div>
+
+<!-- HEADER ENDS -->
+<br></br>
+
+<center>
+<form class="vldform vldauth" method="post" action="bankprocess.jsp"
+		name="f" onSubmit='return call()'>
+		<h1>Bank SignUp</h1>
+		<input class="vldform__textbox" type="text" placeholder="User Id"
+			name="id" required> <input class="vldform__textbox"
+			type="password" id="" placeholder="Password" name="pwd" required>
+			<input class="vldform__textbox"
+			type="password" id="" placeholder="Confirm Password" name="pwd1" required>
+			<input class="vldform__textbox"
+			type="text" id="" placeholder="Enter Bank Name" name="bname" required>
+
+		
+		 <a
+			class="vldform__recoverypassword" href="#"
+			onclick="window.location='newBank_login.jsp'">Already Have An Account??</a> <input
+			class="vldform__button" type="submit" value="Sign Up" width="25%">
+
+
+
+		<input class="vldform__button" type="button" value="Home"
+			onClick="window.location='index.jsp'">
+
+
+	</form>
+
+	
+	 <br></br>
+	
+	
+		</div>
+		<br class="clear" />
+	</div>
+	</div>
+	<div id="copyright">&copy; Bankigiri. Designed by Pareekshit
+		(2015CSA1127).</div>
+		
+		</center>
 </body>
+<script>
+	"use strict";
+			"object" != typeof window.CP && (window.CP = {}),
+			window.CP.PenTimer = {
+				programNoLongerBeingMonitored : !1,
+				timeOfFirstCallToShouldStopLoop : 0,
+				_loopExits : {},
+				_loopTimers : {},
+				START_MONITORING_AFTER : 2e3,
+				STOP_ALL_MONITORING_TIMEOUT : 5e3,
+				MAX_TIME_IN_LOOP_WO_EXIT : 2200,
+				exitedLoop : function(o) {
+					this._loopExits[o] = !0
+				},
+				shouldStopLoop : function(o) {
+					if (this.programKilledSoStopMonitoring)
+						return !0;
+					if (this.programNoLongerBeingMonitored)
+						return !1;
+					if (this._loopExits[o])
+						return !1;
+					var t = this._getTime();
+					if (0 === this.timeOfFirstCallToShouldStopLoop)
+						return this.timeOfFirstCallToShouldStopLoop = t, !1;
+					var i = t - this.timeOfFirstCallToShouldStopLoop;
+					if (i < this.START_MONITORING_AFTER)
+						return !1;
+					if (i > this.STOP_ALL_MONITORING_TIMEOUT)
+						return this.programNoLongerBeingMonitored = !0, !1;
+					try {
+						this._checkOnInfiniteLoop(o, t)
+					} catch (e) {
+						return this._sendErrorMessageToEditor(),
+								this.programKilledSoStopMonitoring = !0, !0
+					}
+					return !1
+				},
+				_sendErrorMessageToEditor : function() {
+					try {
+						if (this._shouldPostMessage()) {
+							var o = {
+								action : "infinite-loop",
+								line : this._findAroundLineNumber()
+							};
+							parent.postMessage(o, "*")
+						} else
+							this._throwAnErrorToStopPen()
+					} catch (t) {
+						this._throwAnErrorToStopPen()
+					}
+				},
+				_shouldPostMessage : function() {
+					return document.location.href.match(/boomerang/)
+				},
+				_throwAnErrorToStopPen : function() {
+					throw "We found an infinite loop in your Pen. We've stopped the Pen from running. Please correct it or contact support@codepen.io."
+				},
+				_findAroundLineNumber : function() {
+					var o = new Error, t = 0;
+					if (o.stack) {
+						var i = o.stack.match(/boomerang\S+:(\d+):\d+/);
+						i && (t = i[1])
+					}
+					return t
+				},
+				_checkOnInfiniteLoop : function(o, t) {
+					if (!this._loopTimers[o])
+						return this._loopTimers[o] = t, !1;
+					if (t - this._loopTimers[o] > this.MAX_TIME_IN_LOOP_WO_EXIT)
+						throw "Infinite Loop found on loop: " + o
+				},
+				_getTime : function() {
+					return +new Date
+				}
+			},
+			window.CP.shouldStopExecution = function(o) {
+				var t = window.CP.PenTimer.shouldStopLoop(o);
+				return
+						!0 === t
+								&& console
+										.warn("[CodePen]: An infinite loop (or a loop taking too long) was detected, so we stopped its execution. Sorry!"),
+						t
+			}, window.CP.exitedLoop = function(o) {
+				window.CP.PenTimer.exitedLoop(o)
+			};
+</script>
+<script id="rendered-js">
+	function showregform() {
+		document.title = "Sign up";
+		document.querySelector(".vldauth").style.display = "none";
+		document.querySelector(".vldreg").style.display = "flex";
+	}
+
+	function showauthform() {
+		document.title = "Log in";
+		document.querySelector(".vldauth").style.display = "flex";
+		document.querySelector(".vldreg").style.display = "none";
+		document.querySelector(".vldrecpass").style.display = "none";
+	}
+
+	function showrecoveryform() {
+		document.title = "Password recovery";
+		document.querySelector(".vldauth").style.display = "none";
+		document.querySelector(".vldrecpass").style.display = "flex";
+	}
+	//# sourceURL=pen.js
+</script>
+<script>
+	!function() {
+		function e(e) {
+			t(e), window.PrefixFree && StyleFix.process()
+		}
+		function t(e) {
+			var t = n(), a = document.createElement("style");
+			a.type = "text/css", a.className = "cp-pen-styles",
+					a.styleSheet ? a.styleSheet.cssText = e : a
+							.appendChild(document.createTextNode(e)), c
+							.appendChild(a), t && t.parentNode.removeChild(t)
+		}
+		function n() {
+			for (var e = document.getElementsByTagName("style"), t = e.length - 1; t >= 0; t--)
+				if ("cp-pen-styles" === e[t].className)
+					return e[t];
+			return !1
+		}
+		function a(e) {
+			window.addEventListener ? window.addEventListener("message", e, !1)
+					: window.attachEvent("onmessage", e)
+		}
+		function s(e, t) {
+			try {
+				if (!/codepen/.test(e.origin))
+					return null;
+				if ("object" != typeof e.data)
+					return null;
+				if (e.data.action === t)
+					return e.data
+			} catch (n) {
+			}
+			return null
+		}
+		var c = document.head || document.getElementsByTagName("head")[0], r = "ACTION_LIVE_VIEW_RELOAD_CSS";
+		a(function(t) {
+			var n = s(t, r);
+			n && e(n.data.css)
+		})
+	}();
+</script>
 </html>

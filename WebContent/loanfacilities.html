@@ -1,70 +1,185 @@
-<html>
 
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Advance Schemes</title>
 
-<body background="backgroun.png" style="background-attachment:fixed" text="#333399" link="#990033" vlink="#009966" alink="#FF6600">
-<H2><CENTER>LOAN FACILITIES</CENTER></H2>
-<table align="center" width="100%">
-<tr>
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Arvo"
+	rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<td>
- 
-		<p><h3>
-		<img src="emb.gif" width="67" height="58">HOUSING LOANS</h3>
-		<P>
-			<pre>
-			<IMG SRC="anabull1.gif" width="20" height="20">Helps realise one's dream of owning a house.
-			<IMG SRC="anabull1.gif">No upper limit for loan.
-			<IMG SRC="anabull1.gif">Interest on daily diminishing balance.
-			</pre>
-		</P>
-	</td>
-</tr>
-<tr>
-	<td>
-		<p><h3>
-			<IMG SRC="emb.gif" width="67" height="58">AGRI MOBILE</h3>
-		</P></h3>
-		<pre>
-			<IMG SRC="anabull1.gif">Helps those engaged in agiculture in owning
-			 a four-wheel mode of transport for management travel and transportation.
-			<IMG SRC="anabull1.gif">Tenure:5 - 7 years.
-			<IMG SRC="anabull1.gif">No prepayment penalty.
-		</pre>
-		<BR>
-	</td>
-</tr>
-<tr>
-	<td>
-		<P><h3>
-			<IMG src="emb.gif">PROFESSIONAL & SELF-EMPLOYEMENT</h3>
-		<P></h3>
-		<pre>
-			<IMG SRC="anabull1.gif">Professionals like doctors,lawyers,engineers,
-			agricultarists,CAs,etc who are not employed are eligible.
-			<IMG SRC="anabull1.gif">Ex-NRIs are also eligible.
-			<IMG SRC="anabull1.gif">No pre-payment penalty.
-		</pre>
-	</td>
-</tr>
-<tr>
-	<td>
-		<p><h3>
-			<IMG SRC="emb.gif">EDUCATION LOANS</h3>
-		<P></h3>
-		<pre>
-			<IMG SRC="anabull1.gif">Aims at financing studies in India and
-			 for students of academic brilliance.
-			<IMG SRC="anabull1.gif">Maxium amount upto RS 10 Lac
-			<IMG SRC="anabull1.gif">No pre-payment penalty.
+
+<style>
+.vldform__button {
+	margin-top: 42px;
+	height: 50px;
+	border: 0;
+	color: #fff;
+	border-radius: 10px;
+	background-image: linear-gradient(#0A7F99, #0A7F99);
+	font-size: 22px;
+	font-weight: 600;
+	font-family: "Nunito Sans";
+	cursor: pointer;
+}
+
+.background{
+	background-image:
+}
+</style>
+
+<script type="text/javascript">
+	function startTime() {
+		var today = new Date();
+		var h = today.getHours();
+		var m = today.getMinutes();
+		var s = today.getSeconds();
+		// add a zero in front of numbers<10
+		m = checkTime(m);
+		s = checkTime(s);
+		document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+		t = setTimeout('startTime()', 500);
+	}
+	function checkTime(i) {
+		if (i < 10) {
+			i = "0" + i;
+		}
+		return i;
+	}
+</script>
+
+
+
+<title>BANKIGIRI</title>
+</head>
+<body onload="startTime()" alink="#FF6600" >
+
+	<div id="bg1"></div>
+	<div id="bg2"></div>
+	<div id="outer">
+
+		<!-- HEADER STARTS -->
+		<div id="header">
+			<div id="logo">
+
+				<h1>Bankigiri - A Connected Banking for All</h1>
+
+			</div>
 			<br>
-		</pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name=back  value="BACK" onClick="window.location='index.jsp'">
-	</td>
-</tr>
-</table>
+			<marquee>
+				<b><i>Why let Anything Stop You when you can
+						#Live_Your_Own_Way ! Here you can get information about the
+						various loan facilities provided by different banks. For loan
+						application, you need to visit the nearest branch of Bankigiri
+						where our executive will help you understand the loan process and
+						will help in taking loan without any fee.</i></b>
+			</marquee>
+			<div id="txt" align="right"></div>
+			<div id="nav">
+				<ul>
+					<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
+					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
+					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
+					<li><a href="loanfacilities.html">LOANS</a></li>
+					<li><a href="internet banking.html">INTERNET BANKING</a></li>
+					<li><a href="aboutus.html">ABOUT US</a></li>
+				</ul>
+				<br class="clear" />
+			</div>
+		</div>
+
+		<!-- HEADER ENDS -->
+
+
+		<table class="background"  align="center" width="100%">
+			<tr>
+
+				<td>
+
+					<p>
+					<h3>
+						<img src="emb.gif" width="67" height="58">HOUSING LOANS
+					</h3>
+					<P>
+					<pre>
+			<IMG SRC="anabull1.gif" width="20" height="20"><a
+							href="https://applications.hdfc.com/loanapplication/CampaignNewCustomer.php">Check HDFC Home Loan Facilities</a>
+			<IMG SRC="anabull1.gif"><a
+							href="https://www.spoctree.com/campaign/home-loan/axis/">Check AXIS Home Loan Facilities</a>
+			<IMG SRC="anabull1.gif"><a
+							href="https://www.lichousing.com/lms_module.php?gclid=CjwKCAjw8LTmBRBCEiwAbhh-6MVXtN1DKgzJ5WiEQfc_WHa6dMyQR036fwkjfgH8FqJqnSs7kSSJtRoCxCkQAvD_BwE">Check SBI Home Loan Facilities</a>
+			</pre>
+					</P>
+				</td>
+				
+				
+			</tr>
+			<tr>
+				<td>
+					<p>
+					<h3>
+						<IMG SRC="emb.gif" width="67" height="58">AGRICULTURE LOANS
+					</h3>
+					</P>
+					</h3> <pre>
+			<IMG SRC="anabull1.gif" width="20" height="20"><a
+							href="https://www.hdfcbank.com/htdocs/wholesale/fit/commodity_businesses/farmers_agriculturists/Farmers_Agriculturists.htm">Check HDFC Agriculture Loan Facilities</a>
+			<IMG SRC="anabull1.gif"><a
+							href="https://www.axisbank.com/agri-and-rural/loans">Check AXIS Agriculture Loan Facilities</a>
+			<IMG SRC="anabull1.gif"><a
+							href="https://www.sbi.co.in/portal/web/agriculture-banking">Check SBI Agriculture Loan Facilities</a>
+		</pre> <BR>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<P>
+					<h3>
+						<IMG src="emb.gif">PROFESSIONAL & SELF-EMPLOYEMENT
+					</h3>
+					<P>
+					</h3> <pre>
+			<IMG SRC="anabull1.gif" width="20" height="20"><a
+							href="https://leads.hdfcbank.com/StartDoing/personal-loan.aspx?promo_code=p16_google_search_ntb&utm_source=google&utm_medium=cpc&utm_campaign=personalloanbrand&utm_content=pl-competition-exact-occ-hdfc-personal-loan&utm_device=c&utm_term=axis%20personal%20loan&campid=pl-competition-exact-occ&adwcode=hdfc-personal-loan&keyw=axis%20personal%20loan&source_code=HNET&ef_id=CjwKCAjw8LTmBRBCEiwAbhh-6KcyrTYk3gQ812QEpLehdQm9FkDqIRbG3HnSUNZzRjXRivplgXySjxoCAw8QAvD_BwE:G:s&network=g&campaignid=1020346270&adgroupid=52767471040&keyword=axis%20personal%20loan&matchtype=e&placement=&device=c&creative=345335795662&adposition=1t1&targetid=kwd-301304511760&random=5407630026019618254&&gclid=CjwKCAjw8LTmBRBCEiwAbhh-6KcyrTYk3gQ812QEpLehdQm9FkDqIRbG3HnSUNZzRjXRivplgXySjxoCAw8QAvD_BwE">Check HDFC Personal Loan Facilities</a>
+			<IMG SRC="anabull1.gif"><a
+							href="https://www.spoctree.com/campaign/home-loan/axis/">Check AXIS Personal Loan Facilities</a>
+			<IMG SRC="anabull1.gif"><a
+							href="https://www.sbi.co.in/portal/web/personal-banking/personal-loans">Check SBI Personal Loan Facilities</a>
+		</pre>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>
+					<h3>
+						<IMG SRC="emb.gif">EDUCATION LOANS
+					</h3>
+					<P>
+					</h3> <pre>
+			<IMG SRC="anabull1.gif" width="20" height="20"><a
+							href="http://www.hdfccredila.com/education-loan.html?gclid=CjwKCAjw8LTmBRBCEiwAbhh-6F5pm73Ko6xQKVYQPRMbAQ4cgoFjN4c5PAducxcqKYGOM15zEw4uHhoCZUkQAvD_BwE">Check HDFC Educational Loan Facilities</a>
+			<IMG SRC="anabull1.gif"><a
+							href="https://www.axisbank.com/retail/loans/education-loan/features-benefits">Check AXIS Educational Loan Facilities</a>
+			<IMG SRC="anabull1.gif"><a
+							href="https://www.sbi.co.in/portal/web/interest-rates/education-loan-scheme">Check SBI Educational Loan Facilities</a>
+			<br>
+		</pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+					type="button" class="vldform__button" name=back value="  Back  "
+					onClick="window.location='index.jsp'">
+				</td>
+			</tr>
+		</table>
+
+		<br class="clear" />
+	</div>
+
+
+	</div>
+	<div id="copyright">&copy; Bankigiri. Designed by Pareekshit
+		(2015CSA1127).</div>
 </body>
 </html>
-
-
-

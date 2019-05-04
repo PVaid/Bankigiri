@@ -1,10 +1,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/font-awesome.css" rel="stylesheet">
-
+<link href="http://fonts.googleapis.com/css?family=Arvo"rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
 
 
 <script type="text/javascript">
@@ -26,26 +33,22 @@
 		return i;
 	}
 </script>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+
 <title>BANKIGIRI</title>
-<link href="http://fonts.googleapis.com/css?family=Arvo"
-	rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body onload="startTime()">
 	<div id="bg1"></div>
 	<div id="bg2"></div>
 	<div id="outer">
+	
+	<!-- HEADER STARTS -->
 		<div id="header">
 			<div id="logo">
 				<h1>BANKIGIRI - A Connected Banking For All</h1>
-
 			</div>
-
 			<br>
-
 			<marquee>
 				<b><i>Bankigiri brings Banking at your Finger Tips by
 						serving our customers on 3S policy - Simple, Smart and Secure.
@@ -59,15 +62,15 @@
 					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
 					<li><a href="loanfacilities.html">LOANS</a></li>
 					<li><a href="internet banking.html">INTERNET BANKING</a></li>
-					<li><a href="aboutus.html">ABOUT US</a></li>
-
-
-
+					<li><a href="newcontact.jsp">CONTACT US</a></li>
 				</ul>
 				<br class="clear" />
 			</div>
 		</div>
 
+<!-- HEADER ENDS -->
+
+<!-- PICTURE BANNER STARTS -->
 
 		<div id="banner">
 			<div class="captions">
@@ -75,9 +78,12 @@
 			</div>
 			<img src="images/banner.jpg" alt="" />
 		</div>
+		
+<!-- PICTURE BANNER ENDS -->		
+
 		<div id="main">
 
-			<!-- Sidebar 1 -->
+<!-- Side-bar 1 -->
 
 			<div id="sidebar">
 				<div class="box">
