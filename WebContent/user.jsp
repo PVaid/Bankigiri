@@ -138,9 +138,11 @@ font-weight:bold;
 			<div id="txt" align="right"></div>
 			<div id="nav">
 				<ul>
-					<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
+				<!-- <li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
 					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
-					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
+					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li> -->
+					
+					<li><a href="otherbanknewac.jsp">New Details?</a>
 					<li><a href="loanfacilities.html">LOANS</a></li>
 					<li><a href="internet banking.html">INTERNET BANKING</a></li>
 					<li><a href="newcontact.jsp">CONTACT US</a></li>
@@ -196,9 +198,9 @@ Connection con = DB.getCon();
 
  </form>
  <br></br>
-<center><a href="otherbanknewac.jsp"style="text-decoration : none"><font color="BLACK"><h1><b>Click to Enter new Bank Details</b></h1> </a>
 
-<br><center><BR><BR>
+
+
 
 
 	 <br></br>
