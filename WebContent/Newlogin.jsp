@@ -178,7 +178,7 @@ to {
 			<div id="txt" align="right"></div>
 			<div id="nav">
 				<ul>
-					<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
+					<li class="first"><a href="index.jsp">Home</a></li>
 					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
 					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
 					<li><a href="loanfacilities.html">LOANS</a></li>
@@ -208,8 +208,7 @@ to {
 			class="vldform__recoverypassword" href="#"
 			onclick="window.location='New_Customer_Login.jsp'">Sign Up?</a> <input
 			class="vldform__button" type="submit" value="Log in" width="25%">
-		<input class="vldform__button" type="button" value="Home"
-			onClick="window.location='index.jsp'">
+		
 	</form>
 	 <br></br>
 	

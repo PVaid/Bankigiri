@@ -179,8 +179,9 @@ to {
 			<div id="txt" align="right"></div>
 			<div id="nav">
 				<ul>
+					
+					<li><a href="index.jsp">Home</a></li>
 					<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
-					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
 					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
 					<li><a href="loanfacilities.html">LOANS</a></li>
 					<li><a href="internet banking.html">INTERNET BANKING</a></li>
@@ -233,8 +234,7 @@ to {
 
 
 
-		<input class="vldform__button" type="button" value="Home"
-			onClick="window.location='index.jsp'">
+		
 
 
 	</form>

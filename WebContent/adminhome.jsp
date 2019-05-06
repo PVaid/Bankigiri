@@ -59,7 +59,7 @@
         <td class="col_font"><strong><a href="pbreq.jsp" style="text-decoration:none"><input type="button" value="Pending Banker Request"/></a></strong></td>
         <td class="col_font"><strong><a href="pureq.jsp" style="text-decoration:none"><input type="button" value="Pending User Request"/></a></strong></td>
         <td class="col_font"><strong><a href="pureq.jsp" style="text-decoration:none"><input type="button" value="User Issues"/></a></strong></td>
-        <td class="col_font"><strong><a href="index.jsp" style="text-decoration:none"><input type="button" value="SignOut"/></a></strong></td>
+        <td class="col_font"><strong><a href="newAdmin_login.jsp" style="text-decoration:none"><input type="button" value="SignOut"/></a></strong></td>
         
       </tr>
     </table></td>
