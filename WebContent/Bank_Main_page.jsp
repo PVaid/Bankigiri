@@ -57,16 +57,17 @@ String bn=(String)session.getAttribute("bname");
 			</div>
 			<br>
 			<marquee>
-				<b><i>Welcome Admin.</i></b>
+				<b><i>Welcome To <%=bn%> Bank.</i></b>
 			</marquee>
 			<div id="txt" align="right"></div>
 			<div id="nav">
 				<ul>
-					<li class="first"><a href="pbreq.jsp">Pending Banker Request</a></li>
-					<li><a href="pureq.jsp">Pending User Request</a></li>
-					<li><a href="Customer_Issues.jsp">User Issues</a></li>
-					<li><a href="newAdmin_login.jsp">Sign Out</a></li>
-					
+					<li class="first"><a href="lcustomer.jsp?bname=<%=bn%>">List of Customers</a></li>
+					<li><a href="lacconts.jsp?bname=<%=bn%>p">List of A/c</a></li>
+					<li><a href="transpen.jsp?bname=<%=bn%>">Transfer Pending</a></li>
+					<li><a href=transdec.jsp?bname=<%=bn%>>Transfer Decline</a></li>
+					<li><a href="newaccpen.jsp?bname=<%=bn%>">New Pending A/c</a></li>
+					<li><a href="newBank_login.jsp">SignOut</a></li>
 				</ul>
 				<br class="clear" />
 			</div>

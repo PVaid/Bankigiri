@@ -40,25 +40,20 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover
 </style>
 		<h2>
 			<u><center>
-					<font size="+2" color="#000000"> New User Requests </font></u>
+					<font size="+2" color="#000000"> User Issues </font></u>
 		</h2>
 		<table width="60%" border="1" align="center">
 			<tr align="center">
 
 				<td><font size="4" color="#000000">User Name</font></b></td>
-				<td><font size="4" color="#000000">Password</b></td>
-				<td><font size="4" color="#000000">Bank Name</b></td>
-				<td colspan="2"><font size="4" color="#000000">Operations</b></td>
-
-
+				<td><font size="4" color="#000000">Email</b></td>
+				<td><font size="4" color="#000000">Subject</b></td>
+				<td colspan="2"><font size="4" color="#000000">Message</b></td>
 			</tr>
 			<%
 				int s = 0;
-
-				//Class.forName("oracle.jdbc.driver.OracleDriver");
-				//Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","java");
 				Connection con = DB.getCon();
-				PreparedStatement st = con.prepareStatement("select * from blogin where status=?");
+				PreparedStatement st = con.prepareStatement("select * from contact where id=?");
 				st.setInt(1, s);
 				ResultSet rs = st.executeQuery();
 				while (rs.next()) {
@@ -68,13 +63,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover
 				<%
 					int id = rs.getInt(1);
 				%>
-				<td><font size="3" color="#DF4800"><%=rs.getString(2)%></font></td>
-				<td><font size="3" color="#DF4800"><%=rs.getString(3)%></font></td>
-				<td><font size="3" color="#DF4800"><%=rs.getString(4)%></font></td>
-				<td><a href="acceptbuser.jsp?id=<%=id%>"><font size="3"
-						color="#DF4800">Accept</font></a></td>
-				<td><a href="deletebuser.jsp?id=<%=id%>"><font size="3"
-						color="#DF4800">Decline</font></a></td>
+				<td><font size="3" color="#000000"><%=rs.getString(2)%></font></td>
+				<td><font size="3" color="#000000"><%=rs.getString(3)%></font></td>
+				<td><font size="3" color="#000000"><%=rs.getString(4)%></font></td>			
 			</tr>
 			<BR>
 			<BR>
@@ -83,7 +74,5 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover
 			%>
 			<center>
 		</table>
-		<BR>
-		<BR>
-		<BR> <input type="button" name=back value="   BACK   "
-			onClick="window.location='adminhome.jsp'">
+		<BR> <BR> <BR> <input type="button" name=back
+			value="   BACK   " onClick="window.location='adminhome.jsp'">

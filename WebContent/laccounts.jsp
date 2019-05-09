@@ -1,6 +1,11 @@
 <%@page import="java.sql.*"%>
 <%@ page import ="p1.*" %>
 		<BODY background="backgroun.png"><BR><BR><BR>
+		
+		
+
+		
+		
 <CENTER>
 <h2><U>List of Accounts</H2><BR><BR><BR><BR>
 <table align=center cellpadding=0 >

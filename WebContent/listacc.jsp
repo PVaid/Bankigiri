@@ -63,4 +63,4 @@ if(count==0)
 
 </table>
 <br> <BR><BR>
-<center><input type="button" value="     BACK    " onClick="window.location='bmain.jsp'">  
+<center><input type="button" value="     BACK    " onClick="window.location='Bank_Main_page.jsp'">  

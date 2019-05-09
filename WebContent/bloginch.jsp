@@ -30,7 +30,7 @@ if(rs.next())
 {
 	in=rs.getInt(5);
 	if(in==1)
-		response.sendRedirect("bmain.jsp");
+		response.sendRedirect("Bank_Main_page.jsp");
 	else
 		response.sendRedirect("loginpending.jsp");
 }
