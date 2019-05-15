@@ -63,9 +63,9 @@ String bn=(String)session.getAttribute("bname");
 			<div id="nav">
 				<ul>
 					<li class="first"><a href="lcustomer.jsp?bname=<%=bn%>">List of Customers</a></li>
-					<li><a href="lacconts.jsp?bname=<%=bn%>p">List of A/c</a></li>
+					<li><a href="lacconts.jsp?bname=<%=bn%>">List of A/c</a></li>
 					<li><a href="transpen.jsp?bname=<%=bn%>">Transfer Pending</a></li>
-					<li><a href=transdec.jsp?bname=<%=bn%>>Transfer Decline</a></li>
+					<li><a href="transdec.jsp?bname=<%=bn%>">Transfer Decline</a></li>
 					<li><a href="newaccpen.jsp?bname=<%=bn%>">New Pending A/c</a></li>
 					<li><a href="newBank_login.jsp">SignOut</a></li>
 				</ul>

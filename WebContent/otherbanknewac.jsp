@@ -184,9 +184,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover
 	<BR>
 	<BR>
 	<input type=submit value=Submit>&nbsp;&nbsp;&nbsp;&nbsp;
-	<input type="button" name=back value="   back   "
+	<input type="button" name=back value="   Back   "
 		onClick="window.location='user.jsp'">&nbsp;&nbsp;&nbsp;&nbsp;
-	<input type="reset" value="   reset   ">
+	<input type="reset" value="   Reset   ">
 
 	</font>
 	</b>

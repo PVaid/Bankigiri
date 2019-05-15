@@ -203,7 +203,8 @@ to {
 			<div id="txt" align="right"></div>
 			<div id="nav">
 				<ul>
-					<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
+					<li><a href="index.jsp">Home</a></li>
+					<!--<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>  -->
 					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
 					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
 					<li><a href="loanfacilities.html">LOANS</a></li>
@@ -226,18 +227,18 @@ to {
 
 				<h1>User LogUp</h1>
 				<input class="vldform__textbox" type="text" name="id"
-					placeholder="customer id" id="cid" required>
-				<input class="vldform__textbox" type="password" name="pwd" 
-								placeholder="password" required> 
-								<input class="vldform__textbox" type="password" name="pwd1" 
-								placeholder="confirm password" required> <a
+					placeholder="customer id" id="cid" required> <input
+					class="vldform__textbox" type="password" name="pwd"
+					placeholder="password" required> <input
+					class="vldform__textbox" type="password" name="pwd1"
+					placeholder="confirm password" required> <a
 					class="vldform__recoverypassword" href="#"
 					onclick="showrecoveryform()">Forgot password?</a> <a
 					class="vldform__recoverypassword" href="#"
-					onclick="window.location='Newlogin.jsp'">Already have an account?</a> <input
-					class="vldform__button" type="submit" value="Sign Up" width="25%">
-				<input class="vldform__button" type="button" value="Home"
-					onClick="window.location='index.jsp'">
+					onclick="window.location='Newlogin.jsp'">Already have an
+					account?</a> <input class="vldform__button" type="submit"
+					value="Sign Up" width="25%">
+
 			</form>
 			<br></br>
 	</div>
