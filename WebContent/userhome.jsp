@@ -104,7 +104,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover
 					<ul>
 						
 						<li><a href="loanfacilities.html">Loan</a></li>
-						<li><a href="internet banking.html">INTERNET BANKING</a></li>
+						
 						<li><a href="Newlogin.jsp">Sign out</a></li>
 						<li><a href="newcontact.jsp">CONTACT US</a></li>
 					</ul>

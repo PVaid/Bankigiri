@@ -4,12 +4,17 @@
 
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/font-awesome.css" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Arvo"rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Arvo"
+	rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+	crossorigin="anonymous">
 
 
 
@@ -42,8 +47,8 @@
 	<div id="bg1"></div>
 	<div id="bg2"></div>
 	<div id="outer">
-	
-	<!-- HEADER STARTS -->
+
+		<!-- HEADER STARTS -->
 		<div id="header">
 			<div id="logo">
 				<h1>BANKIGIRI - A Connected Banking For All</h1>
@@ -61,16 +66,16 @@
 					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
 					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
 					<li><a href="loanfacilities.html">LOANS</a></li>
-					<li><a href="internet banking.html">INTERNET BANKING</a></li>
+					
 					<li><a href="newcontact.jsp">CONTACT US</a></li>
 				</ul>
 				<br class="clear" />
 			</div>
 		</div>
 
-<!-- HEADER ENDS -->
+		<!-- HEADER ENDS -->
 
-<!-- PICTURE BANNER STARTS -->
+		<!-- PICTURE BANNER STARTS -->
 
 		<div id="banner">
 			<div class="captions">
@@ -78,12 +83,12 @@
 			</div>
 			<img src="images/banner.jpg" alt="" />
 		</div>
-		
-<!-- PICTURE BANNER ENDS -->		
+
+		<!-- PICTURE BANNER ENDS -->
 
 		<div id="main">
 
-<!-- Side-bar 1 -->
+			<!-- Side-bar 1 -->
 
 			<div id="sidebar">
 				<div class="box">
@@ -106,7 +111,7 @@
 									<h3></h3>
 								</div>
 								<div>
-									<p align="justify">The Bankigiri Interface is a targeted
+									<p align="justify" >The Bankigiri Interface is a targeted
 										future banking solution for the users having multiple bank
 										accounts. This interface focuses on 3S - Simple, Smart and
 										Secure. This interface integrates all existing banks and

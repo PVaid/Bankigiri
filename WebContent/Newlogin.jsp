@@ -182,7 +182,7 @@ to {
 					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
 					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
 					<li><a href="loanfacilities.html">LOANS</a></li>
-					<li><a href="internet banking.html">INTERNET BANKING</a></li>
+					
 					<li><a href="newcontact.jsp">CONTACT US</a></li>
 				</ul>
 				<br class="clear" />
@@ -203,10 +203,9 @@ to {
 		<input class="vldform__textbox" type="text" placeholder="Customer Id"
 			name="cid" required> <input class="vldform__textbox"
 			type="password" id="" placeholder="Password" name="pwd" required>
-			<a class="vldform__recoverypassword" href="#"
-			onclick="showrecoveryform()">Forgot password?</a> <a
+			 <a
 			class="vldform__recoverypassword" href="#"
-			onclick="window.location='New_Customer_Login.jsp'">Sign Up?</a> <input
+			onclick="window.location='New_Customer_Login.jsp'">Don't have an account? Sign Up!</a> <input
 			class="vldform__button" type="submit" value="Log in" width="25%">
 		
 	</form>
@@ -222,152 +221,5 @@ to {
 		
 		</center>
 </body>
-<script>
-	"use strict";
-			"object" != typeof window.CP && (window.CP = {}),
-			window.CP.PenTimer = {
-				programNoLongerBeingMonitored : !1,
-				timeOfFirstCallToShouldStopLoop : 0,
-				_loopExits : {},
-				_loopTimers : {},
-				START_MONITORING_AFTER : 2e3,
-				STOP_ALL_MONITORING_TIMEOUT : 5e3,
-				MAX_TIME_IN_LOOP_WO_EXIT : 2200,
-				exitedLoop : function(o) {
-					this._loopExits[o] = !0
-				},
-				shouldStopLoop : function(o) {
-					if (this.programKilledSoStopMonitoring)
-						return !0;
-					if (this.programNoLongerBeingMonitored)
-						return !1;
-					if (this._loopExits[o])
-						return !1;
-					var t = this._getTime();
-					if (0 === this.timeOfFirstCallToShouldStopLoop)
-						return this.timeOfFirstCallToShouldStopLoop = t, !1;
-					var i = t - this.timeOfFirstCallToShouldStopLoop;
-					if (i < this.START_MONITORING_AFTER)
-						return !1;
-					if (i > this.STOP_ALL_MONITORING_TIMEOUT)
-						return this.programNoLongerBeingMonitored = !0, !1;
-					try {
-						this._checkOnInfiniteLoop(o, t)
-					} catch (e) {
-						return this._sendErrorMessageToEditor(),
-								this.programKilledSoStopMonitoring = !0, !0
-					}
-					return !1
-				},
-				_sendErrorMessageToEditor : function() {
-					try {
-						if (this._shouldPostMessage()) {
-							var o = {
-								action : "infinite-loop",
-								line : this._findAroundLineNumber()
-							};
-							parent.postMessage(o, "*")
-						} else
-							this._throwAnErrorToStopPen()
-					} catch (t) {
-						this._throwAnErrorToStopPen()
-					}
-				},
-				_shouldPostMessage : function() {
-					return document.location.href.match(/boomerang/)
-				},
-				_throwAnErrorToStopPen : function() {
-					throw "We found an infinite loop in your Pen. We've stopped the Pen from running. Please correct it or contact support@codepen.io."
-				},
-				_findAroundLineNumber : function() {
-					var o = new Error, t = 0;
-					if (o.stack) {
-						var i = o.stack.match(/boomerang\S+:(\d+):\d+/);
-						i && (t = i[1])
-					}
-					return t
-				},
-				_checkOnInfiniteLoop : function(o, t) {
-					if (!this._loopTimers[o])
-						return this._loopTimers[o] = t, !1;
-					if (t - this._loopTimers[o] > this.MAX_TIME_IN_LOOP_WO_EXIT)
-						throw "Infinite Loop found on loop: " + o
-				},
-				_getTime : function() {
-					return +new Date
-				}
-			},
-			window.CP.shouldStopExecution = function(o) {
-				var t = window.CP.PenTimer.shouldStopLoop(o);
-				return
-						!0 === t
-								&& console
-										.warn("[CodePen]: An infinite loop (or a loop taking too long) was detected, so we stopped its execution. Sorry!"),
-						t
-			}, window.CP.exitedLoop = function(o) {
-				window.CP.PenTimer.exitedLoop(o)
-			};
-</script>
-<script id="rendered-js">
-	function showregform() {
-		document.title = "Sign up";
-		document.querySelector(".vldauth").style.display = "none";
-		document.querySelector(".vldreg").style.display = "flex";
-	}
 
-	function showauthform() {
-		document.title = "Log in";
-		document.querySelector(".vldauth").style.display = "flex";
-		document.querySelector(".vldreg").style.display = "none";
-		document.querySelector(".vldrecpass").style.display = "none";
-	}
-
-	function showrecoveryform() {
-		document.title = "Password recovery";
-		document.querySelector(".vldauth").style.display = "none";
-		document.querySelector(".vldrecpass").style.display = "flex";
-	}
-	//# sourceURL=pen.js
-</script>
-<script>
-	!function() {
-		function e(e) {
-			t(e), window.PrefixFree && StyleFix.process()
-		}
-		function t(e) {
-			var t = n(), a = document.createElement("style");
-			a.type = "text/css", a.className = "cp-pen-styles",
-					a.styleSheet ? a.styleSheet.cssText = e : a
-							.appendChild(document.createTextNode(e)), c
-							.appendChild(a), t && t.parentNode.removeChild(t)
-		}
-		function n() {
-			for (var e = document.getElementsByTagName("style"), t = e.length - 1; t >= 0; t--)
-				if ("cp-pen-styles" === e[t].className)
-					return e[t];
-			return !1
-		}
-		function a(e) {
-			window.addEventListener ? window.addEventListener("message", e, !1)
-					: window.attachEvent("onmessage", e)
-		}
-		function s(e, t) {
-			try {
-				if (!/codepen/.test(e.origin))
-					return null;
-				if ("object" != typeof e.data)
-					return null;
-				if (e.data.action === t)
-					return e.data
-			} catch (n) {
-			}
-			return null
-		}
-		var c = document.head || document.getElementsByTagName("head")[0], r = "ACTION_LIVE_VIEW_RELOAD_CSS";
-		a(function(t) {
-			var n = s(t, r);
-			n && e(n.data.css)
-		})
-	}();
-</script>
 </html>

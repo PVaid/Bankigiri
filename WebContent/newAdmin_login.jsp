@@ -182,7 +182,7 @@ to {
 					<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
 					<li><a href="newBank_login.jsp">BANK LOGIN</a></li>
 					<li><a href="loanfacilities.html">LOANS</a></li>
-					<li><a href="internet banking.html">INTERNET BANKING</a></li>
+					
 					<li><a href="newcontact.jsp">CONTACT US</a></li>
 				</ul>
 				<br class="clear" />

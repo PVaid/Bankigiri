@@ -184,7 +184,7 @@ to {
 					<li class="first"><a href="Newlogin.jsp">CUSTOMER LOGIN</a></li>
 					<li><a href="newAdmin_login.jsp">ADMIN LOGIN</a></li>
 					<li><a href="loanfacilities.html">LOANS</a></li>
-					<li><a href="internet banking.html">INTERNET BANKING</a></li>
+					
 					<li><a href="newcontact.jsp">CONTACT US</a></li>
 				</ul>
 				<br class="clear" />
@@ -226,10 +226,9 @@ to {
 				}
 			%>
 		</tr>
-		<a class="vldform__recoverypassword" href="#"
-			onclick="showrecoveryform()">Forgot password?</a> <a
+		<a
 			class="vldform__recoverypassword" href="#"
-			onclick="window.location='newBank_signup.html'">Sign Up?</a> <input
+			onclick="window.location='newBank_signup.html'">Don't have an account? Sign Up!</a> <input
 			class="vldform__button" type="submit" value="Log in" width="25%">
 
 

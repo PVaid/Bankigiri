@@ -81,7 +81,7 @@ String bn=(String)session.getAttribute("bname");
 			<div class="captions">
 				<h2>GOOD PEOPLE TO GROW WITH</h2>
 			</div>
-			<img src="images/banner.jpg" alt="" />
+			<img src="images/banner.jpg" alt="" height=100% />
 		</div>
 		
 <!-- PICTURE BANNER ENDS -->		
